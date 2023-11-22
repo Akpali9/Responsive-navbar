@@ -1,0 +1,158 @@
+#header,.load {
+    height: 90px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 997;
+    align-items: center!important;
+    background: rgba(6, 12, 34, 0.98);
+    height: 110px;
+    margin-left: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+    
+  .logo{
+    width: 50px;
+    height: 30px;
+    margin-right: auto !important;
+}
+ .logo img {
+    padding: 0;
+    margin-left: 20px;
+    height: 45px;
+    width: 50px;
+    position: relative;
+  }
+  
+.toggle-button{
+  top: 75rem;
+  right: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: fit-content ;
+  margin: 35px;
+  padding: 15px;
+  height: fit-content;
+  transition: 0.2s;
+  cursor: pointer;
+  display: block;
+}
+.toggle-button .bar{
+  height: 3px;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgb(221, 5, 5);
+  border-radius: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+.top{
+    
+    overflow: hidden;
+    padding-right:0px ;
+    width: fit-content;
+}
+.top ul{
+    left: 0;
+    justify-content: space-between;
+
+}
+.top ul li{
+    text-decoration: none;
+    padding: 10px;
+    display: inline;
+    align-content: center;
+}
+.top ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    align-content: center;
+    text-align: center;
+text-transform: uppercase;    
+font-size: small;
+}
+  .top li:hover, .top li a:focus {
+    background: #f82249;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.8s;
+  }
+  .top li a.active{
+    color:gold;
+  }
+  @media (max-width:900px) {
+    .toggle-button{
+        display: block;
+       
+    }
+    
+    .top ul{
+        transition: 0.6s;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-right: 40px;
+        transition: 0.9s;
+        justify-content: center;
+    }
+    .top ul li{
+        text-align: center;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        margin: 12px;
+        transition: 0.2s
+    }
+    .top li a.active{
+        color: #fff; 
+    }
+    .top{
+        left: 0;
+        right: 0;
+        top: 110px;
+        position: absolute;
+        display: block;
+        height: 0;
+       width: 100vw;
+     align-self: start;
+     transition: 0.2s;
+    }
+#header{
+    height:110px;
+    align-items: flex-start;
+       background: rgba(3, 7, 22, 0.98);
+     width: 100%;
+     transition: 0.16s;
+}
+     .top li a.active{
+    color:gold;}
+
+}
+  .top.active{
+    height: 110vh;
+    background: rgba(3, 7, 22, 0.98);
+    left: 0;
+    right: 0;
+  }
+  @media (min-width:900px) {
+    .toggle-button{
+      display: none;
+
+
+
+
+    }
+    @media (max-width:1000px) {
+        .top{
+            font-size: smaller;
+        }
+        .top ul li a{
+            padding: 5px;
+        }
+    }
+  }
+        
